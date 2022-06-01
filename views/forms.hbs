@@ -1,0 +1,207 @@
+<head>
+    <title>PetAmbulance Registration</title>
+</head>
+
+<body>
+    <main class="container py-3">
+        <div class="py-5 text-center">
+          <img class="d-block mx-auto mb-4" src="./images/corgi.png " alt="catdrawing" >
+          <h2 class="hptitle">Registration Form</h2>
+          <p class="lead">Let's get started !</p>
+          <p class="lead">Whether your pet needs an Emergency Ambulance, Vet Appointment or an Online Vet Consultation we will need you to register. </p><p> Please gives us all information and details about your pet. If you are a Pet Parent of more than one, repeat this step until you have registered all your pets.</p>
+        </div>
+    
+        <div class="row row-cols-1  mb-3 g-col-6 g-col-md-4 ">
+          <div class="col-md-7 col-lg-8">
+            <h4 class="mb-3 hptitle">Pet Info.</h4>
+            <form class="needs-validation" novalidate>
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                    <label for="firstName" class="form-label">Pet Name</label>
+                    <input type="text" class="form-control" id="PetName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Valid Pet Name is required.
+                    </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Age</label>
+                    <input type="text" class="form-control" id="Age" placeholder="" value="" required>
+                    <div class="invalid-feedback">Valid Age is required.</div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <label for="country" class="form-label">Breed</label>
+                        <select class="form-select" id="Breed" required>
+                        <option value="">Choose...</option>
+                        <option>Corgi</option>
+                        <option>Neapolitan Mastiff</option>
+                        <option>Dalmatian</option>
+                        <option>Mixed Breeds</option>
+                        </select>
+                        <div class="invalid-feedback">
+                        Please select a valid Breed.</div>
+                    </div>
+        
+                    <div class="col-md-5">
+                        <label for="country" class="form-label">Gender</label>
+                        <select class="form-select" id="Gender" required>
+                            <option value="">Choose...</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid Gender.
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+                    <h4 class="mb-3 hptitle">Pet Parent Info.</h4>
+
+                    <div class="col-sm-6">
+                        <label for="lastName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                        Valid First Name is required.
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                            Valid Last Name is required.
+                        </div>
+                    </div>  
+            
+                    <div class="col-12">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                    </div>
+        
+                    <div class="col-12">
+                    <label for="address" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                    <div class="invalid-feedback">Please enter your Address.</div>
+                    </div>
+        
+                    <div class="col-md-5">
+                    <label for="country" class="form-label">State</label>
+                    <select class="form-select" id="country" required>
+                        <option value="">Choose...</option>
+                        <option>Kansas</option>
+                        <option>California</option>
+                        <option>Michigan</option>
+                        <option>Baltimore</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a valid State.
+                    </div>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="save-info">
+                        <label class="form-check-label" for="save-info">Save this information for next time</label>
+                    </div>
+            
+                    <hr class="my-4">
+        
+                    <h4 class="mb-3 hptitle">Reason for Consultation.</h4>
+        
+                    <div class="my-3">
+                        <div class="form-check">
+                            <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                            <label class="form-check-label" for="credit">Emergency</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="debit">CheckUp / Regular Appointment </label>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-5">
+                        <label for="country" class="form-label">Have a Vet of preference?</label>
+                        <select class="form-select" id="Gender" required>
+                            <option value="">Choose...</option>
+                            <option>Dr. Dolittle </option>
+                            <option>Dr. Stuart</option>
+                            <option>All</option>
+                        </select>
+                        <div class="invalid-feedback">Please select a valid Vet.</div>
+                    </div>
+        
+                    <div class="col-md-5">
+                        <label for="country" class="form-label">Appointment time</label>
+                        <select class="form-select" id="Gender" required>
+                            <option value="">Choose...</option>
+                            <option>11:00hs </option>
+                            <option>11:45hs</option>
+                            <option>15:50hs</option>
+                        </select>
+                        <div class="invalid-feedback">Please select a valid Vet.</div>
+                    </div>
+
+                    <div class="jzdbox1 jzdbasf jzdcal">
+                        <div class="jzdcalt">January2022</div>
+                        
+                        <span>Su</span>
+                        <span>Mo</span>
+                        <span>Tu</span>
+                        <span>We</span>
+                        <span>Th</span>
+                        <span>Fr</span>
+                        <span>Sa</span>
+                        
+                        <span class="jzdb"><!--BLANK--></span>
+                        <span class="jzdb"><!--BLANK--></span>
+                        <span class="jzdb"><!--BLANK--></span>
+                        <span class="jzdb"><!--BLANK--></span>
+                        <span class="jzdb"><!--BLANK--></span>
+                        <span class="jzdb"><!--BLANK--></span>
+                        <span>1</span>
+                        <span class="circle" data-title="Booked">2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                        <span>11</span>
+                        <span class="circle" data-title="Booked">12</span>
+                        <span>13</span>
+                        <span>14</span>
+                        <span>15</span>
+                        <span>16</span>
+                        <span>17</span>
+                        <span>18</span>
+                        <span>19</span>
+                        <span>20</span>
+                        <span>21</span>
+                        <span class="circle" data-title="Booked">22</span>
+                        <span>23</span>
+                        <span>24</span>
+                        <span>25</span>
+                        <span>26</span>
+                        <span>27</span>
+                        <span>28</span>
+                        <span>29</span>
+                        <span>30</span>
+                        <span class="jzdb"><!--BLANK--></span>
+                        <span class="jzdb"><!--BLANK--></span>
+                        <span class="jzdb"><!--BLANK--></span>
+                        <span class="jzdb"><!--BLANK--></span>
+                        <span class="jzdb"><!--BLANK--></span>
+                        <span class="jzdb"><!--BLANK--></span>
+                        </div>
+                </div>
+                <hr class="my-4">
+        
+                <button class="w-100 btn btn-primary btn-lg" type="submit">Continue Registration</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
